@@ -10,7 +10,7 @@
  }
  
  body {
-     background-color: rgb(173, 173, 173);
+     background-color: rgb(209, 209, 209);
  }
  
  a {
@@ -81,4 +81,10 @@
  
  .flex div:hover {
      box-shadow: 0 0 5px 2px aqua;
+ }
+ 
+ footer {
+     background-color: rgb(92, 91, 91);
+     color: white;
+     text-align: center;
  }
