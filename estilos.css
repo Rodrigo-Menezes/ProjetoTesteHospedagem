@@ -10,7 +10,7 @@
  }
  
  body {
-     background-color: rgb(231, 231, 231);
+     background-color: rgb(173, 173, 173);
  }
  
  a {
@@ -23,9 +23,10 @@
      margin-top: 100px;
  }
  
- img {
-     max-width: 100%;
-     display: block;
+ .header img {
+     height: 60px;
+     border: solid 1px white;
+     margin-left: 50px;
  }
  
  .header {
@@ -38,6 +39,11 @@
  
  .menu {
      display: flex;
+     margin-right: 100px;
+ }
+ 
+ .menu :hover {
+     color: aqua;
  }
  
  .menu li {
@@ -50,14 +56,29 @@
  }
  /*CSS FLEXBOX*/
  
+ .flex img {
+     max-width: 100%;
+     display: block;
+     border-bottom: 1px solid black;
+     border-radius: 7px 7px 0 0;
+ }
+ 
  .flex {
      display: flex;
      flex-wrap: wrap;
      max-width: 800px;
-     margin: 0 auto
+     margin: 0 auto;
  }
  
  .flex>div {
      flex: 1 1 200px;
      margin: 10px;
+     border: solid 1px rgb(14, 13, 13);
+     border-radius: 7px;
+     box-shadow: 0 0 5px 2px rgb(116, 116, 116);
+     background-color: white;
+ }
+ 
+ .flex div:hover {
+     box-shadow: 0 0 5px 2px aqua;
  }
