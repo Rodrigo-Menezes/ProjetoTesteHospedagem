@@ -1,90 +1,134 @@
- body,
- ul,
- li,
- p {
-     margin: 0;
-     padding: 0;
-     list-style: none;
-     font-size: 1.2rem;
-     font-family: Arial, Helvetica, sans-serif;
- }
- 
- body {
-     background-color: rgb(209, 209, 209);
- }
- 
- a {
-     text-decoration: none;
-     color: white;
- }
- 
- h1 {
-     text-align: center;
-     margin-top: 100px;
- }
- 
- .header img {
-     height: 60px;
-     border: solid 1px white;
-     margin-left: 50px;
- }
- 
- .header {
-     background-color: rgb(92, 91, 91);
-     display: flex;
-     justify-content: space-between;
-     padding: 20px;
-     align-items: center;
- }
- 
- .menu {
-     display: flex;
-     margin-right: 100px;
- }
- 
- .menu :hover {
-     color: aqua;
- }
- 
- .menu li {
-     margin-left: 10px;
- }
- 
- .menu li a {
-     display: block;
-     padding: 10px;
- }
- /*CSS FLEXBOX*/
- 
- .flex img {
-     max-width: 100%;
-     display: block;
-     border-bottom: 1px solid black;
-     border-radius: 7px 7px 0 0;
- }
- 
- .flex {
-     display: flex;
-     flex-wrap: wrap;
-     max-width: 800px;
-     margin: 0 auto;
- }
- 
- .flex>div {
-     flex: 1 1 200px;
-     margin: 10px;
-     border: solid 1px rgb(14, 13, 13);
-     border-radius: 7px;
-     box-shadow: 0 0 5px 2px rgb(116, 116, 116);
-     background-color: white;
- }
- 
- .flex div:hover {
-     box-shadow: 0 0 5px 2px aqua;
- }
- 
- footer {
-     background-color: rgb(92, 91, 91);
-     color: white;
-     text-align: center;
- }
+                     body,
+                     ul,
+                     li,
+                     p {
+                         margin: 0;
+                         padding: 0;
+                         list-style: none;
+                         font-size: 1.2rem;
+                         font-family: Arial, Helvetica, sans-serif;
+                     }
+                     
+                     body {
+                         background-color: rgb(209, 209, 209);
+                     }
+                     
+                     a {
+                         text-decoration: none;
+                         color: white;
+                     }
+                     
+                     h1 {
+                         text-align: center;
+                         margin-top: 100px;
+                     }
+                     
+                     .header img {
+                         height: 60px;
+                         border: solid 1px white;
+                         margin-left: 50px;
+                     }
+                     
+                     .header {
+                         background-color: rgb(92, 91, 91);
+                         display: flex;
+                         justify-content: space-between;
+                         padding: 20px;
+                         align-items: center;
+                     }
+                     
+                     .menu {
+                         display: flex;
+                         margin-right: 100px;
+                     }
+                     
+                     .menu :hover {
+                         color: aqua;
+                     }
+                     
+                     .menu li {
+                         margin-left: 10px;
+                     }
+                     
+                     .menu li a {
+                         display: block;
+                         padding: 20px;
+                         font-family: Georgia, 'Times New Roman', Times, serif;
+                     }
+                     /*CSS FLEXBOX*/
+                     
+                     .flex img {
+                         max-width: 100%;
+                         display: block;
+                         border-bottom: 1px solid black;
+                         border-radius: 7px 7px 0 0;
+                     }
+                     
+                     .flex {
+                         display: flex;
+                         flex-wrap: wrap;
+                         max-width: 800px;
+                         margin: 0 auto;
+                     }
+                     
+                     .flex>div {
+                         flex: 1 1 200px;
+                         margin: 10px;
+                         border: solid 1px rgb(14, 13, 13);
+                         border-radius: 7px;
+                         box-shadow: 0 0 5px 2px rgb(116, 116, 116);
+                         background-color: white;
+                     }
+                     
+                     .flex div:hover {
+                         box-shadow: 0 0 5px 2px aqua;
+                     }
+                     /* GRID*/
+                     
+                     .grid img {
+                         max-width: 100%;
+                         display: block;
+                     }
+                     
+                     .grid {
+                         display: grid;
+                         grid-template-columns: 1fr 1fr 1fr;
+                         max-width: 800px;
+                         margin: 0 auto;
+                         grid-gap: 20px;
+                         padding: 10px;
+                     }
+                     
+                     .grid>div:nth-child(n + 4) {
+                         display: grid;
+                         grid-template-columns: 1fr 1fr;
+                         grid-gap: 10px;
+                         align-items: center;
+                     }
+                     
+                     .grid>div.anuncio {
+                         grid-column: 1;
+                         grid-row: 2 / 5;
+                         border-top: 10px solid tomato;
+                         display: block;
+                     }
+                     
+                     @media (max-wdth: 600px) {
+                         .grid {
+                             grid-template-columns: repeat(2, 1fr);
+                         }
+                         .grid>div:nth-child(n + 4) {
+                             display: block;
+                         }
+                         .grid>div:nth-child(n + 4) {
+                             grid-column: auto;
+                             grid-row: auto;
+                             order: -1;
+                         }
+                     }
+                     
+                     footer {
+                         background-color: rgb(92, 91, 91);
+                         color: white;
+                         text-align: center;
+                     }
