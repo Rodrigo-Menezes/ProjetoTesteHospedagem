@@ -64,6 +64,7 @@ h1 {
 .menu ul li a {
     border: 1px solid white;
     background-color: rgb(92, 91, 91);
+    width: 200px;
 }
 
 .menu ul {
