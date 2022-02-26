@@ -62,7 +62,7 @@
                      /*CSS FLEXBOX*/
                      
                      .flex img {
-                         max-width: 100%;
+                         width: clamp(100%, 100%, 20px);
                          display: block;
                          border-bottom: 1px solid black;
                          border-radius: 7px 7px 0 0;
@@ -90,7 +90,7 @@
                      /*  CSS GRID*/
                      
                      .grid img {
-                         max-width: 100%;
+                         width: clamp(100%, 100%, 20px);
                          display: block;
                      }
                      
