@@ -57,8 +57,22 @@ h1 {
 
 .menu li a {
     display: block;
-    padding: 20px;
+    padding: 10px;
     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.menu ul li a {
+    border: 1px solid white;
+    background-color: rgb(92, 91, 91);
+}
+
+.menu ul {
+    display: none;
+    position: absolute;
+}
+
+.menu li:hover ul {
+    display: block;
 }
 
 
@@ -152,4 +166,8 @@ h1 {
 .footer ul li {
     padding: 20px;
     margin: 10px;
+}
+
+.footer ul li :hover {
+    color: aqua;
 }
